@@ -1,0 +1,250 @@
+/* ===========================
+   Portfolio Theme - Sky Blue
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Kanit',sans-serif;
+    scroll-behavior:smooth;
+}
+
+:root{
+    --primary:#00A8E8;
+    --secondary:#48CAE4;
+    --light:#EAF8FF;
+    --white:#FFFFFF;
+    --text:#2C3E50;
+}
+
+body{
+    background:linear-gradient(135deg,#F8FDFF,#EAF8FF,#D6F3FF);
+    color:var(--text);
+}
+
+/* ===== Header ===== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(15px);
+    border-bottom:2px solid #BEEBFF;
+    z-index:999;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:var(--primary);
+}
+
+nav a{
+    text-decoration:none;
+    color:var(--text);
+    margin-left:28px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:var(--primary);
+}
+
+/* ===== Hero ===== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 8%;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    max-width:520px;
+}
+
+.hero-text h1{
+    font-size:58px;
+    color:var(--primary);
+}
+
+.hero-text h2{
+    margin:15px 0;
+    color:#555;
+}
+
+.hero-text p{
+    line-height:1.8;
+    color:#666;
+}
+
+.hero-image img{
+    width:320px;
+    height:420px;
+    object-fit:cover;
+    border-radius:20px;
+    border:8px solid white;
+    box-shadow:0 20px 40px rgba(0,168,232,.2);
+}
+
+/* ===== Button ===== */
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:var(--primary);
+    color:white;
+    border-radius:35px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0097D8;
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,168,232,.3);
+}
+
+/* ===== Section ===== */
+
+section{
+    padding:90px 8%;
+}
+
+.title{
+    text-align:center;
+    font-size:38px;
+    color:var(--primary);
+    margin-bottom:35px;
+}
+
+/* ===== Glass Box ===== */
+
+.glass{
+    max-width:900px;
+    margin:auto;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,168,232,.12);
+}
+
+.glass p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+/* ===== Portfolio ===== */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 35px rgba(0,168,232,.25);
+}
+
+.card img{
+    width:100%;
+    height:340px;
+    object-fit:cover;
+}
+
+.card p{
+    padding:15px;
+    text-align:center;
+    font-weight:600;
+}
+
+/* ===== Popup ===== */
+
+#popup{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.85);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+#popup img{
+    max-width:90%;
+    max-height:90%;
+    border-radius:15px;
+}
+
+#popup span{
+    position:absolute;
+    top:20px;
+    right:40px;
+    color:white;
+    font-size:60px;
+    cursor:pointer;
+}
+
+/* ===== Footer ===== */
+
+footer{
+    background:white;
+    text-align:center;
+    padding:25px;
+    color:#666;
+    border-top:2px solid #BEEBFF;
+}
+
+/* ===== Responsive ===== */
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero-image img{
+    margin-bottom:40px;
+    width:260px;
+    height:340px;
+}
+
+.hero-text h1{
+    font-size:42px;
+}
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    margin:0 10px;
+}
+
+}
