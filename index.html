@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        My Portfolio
+    </div>
+
+    <nav>
+
+        <a href="#home">หน้าหลัก</a>
+
+        <a href="#about">ประวัติ</a>
+
+        <a href="#education">การศึกษา</a>
+
+        <a href="#portfolio">ผลงาน</a>
+
+        <a href="#contact">ติดต่อ</a>
+
+    </nav>
+
+</header>
+
+<!-- Hero -->
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>นางสาวกัญจน์ชญา อุทัย</h1>
+
+<h2>PORTFOLIO</h2>
+
+<p>
+
+แฟ้มสะสมผลงานเพื่อการศึกษาต่อ
+
+</p>
+
+<a href="#portfolio" class="btn">
+
+ชมผลงาน
+
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="images/profile.jpg" alt="Profile">
+
+</div>
+
+</section>
+
+<!-- About -->
+
+<section id="about">
+
+<h2 class="title">
+
+ABOUT ME
+
+</h2>
+
+<div class="glass">
+
+<p><b>ชื่อ :</b>นางสาวกัญจน์ชญา อุทัย</p>
+
+<p><b>โรงเรียน :</b> โรงเรียนกระทุ่มแบน "วิเศษสมุทคุณ"</p>
+
+<p><b>แผนการเรียน :</b> วิทยาศาสตร์และคณิตศาสตร์ </p>
+
+
+</div>
+
+</section>
+
+<!-- Education -->
+
+<section id="education">
+
+<h2 class="title">
+
+EDUCATION
+
+</h2>
+
+<div class="glass">
+
+<p>ประถมศึกษา : โรงเรียนบ้านคลองตัน </p>
+
+<p>มัธยมศึกษาตอนต้น :โรงเรียนกระทุ่มแบน "วิเศษสมุทคุณ"</p>
+
+<p>มัธยมศึกษาตอนปลาย : โรงเรียนกระทุ่มแบน "วิเศษสมุทคุณ"</p>
+
+</div>
+
+</section>
+
+<!-- Portfolio -->
+
+<section id="portfolio">
+
+<h2 class="title">
+
+PORTFOLIO
+
+</h2>
+
+<div class="gallery">
+
+<div class="card">
+<img src="images/page1.jpg" onclick="openImage(this.src)">
+<p>Portfolio หน้า 1</p>
+</div>
+
+<div class="card">
+<img src="images/page2.jpg" onclick="openImage(this.src)">
+<p>Portfolio หน้า 2</p>
+</div>
+
+<div class="card">
+<img src="images/page3.jpg" onclick="openImage(this.src)">
+<p>Portfolio หน้า 3</p>
+</div>
+
+<div class="card">
+<img src="images/page4.jpg" onclick="openImage(this.src)">
+<p>Portfolio หน้า 4</p>
+</div>
+
+<div class="card">
+<img src="images/page5.jpg" onclick="openImage(this.src)">
+<p>Portfolio หน้า 5</p>
+</div>
+
+<div class="card">
+<img src="images/page6.jpg" onclick="openImage(this.src)">
+<p>Portfolio หน้า 6</p>
+</div>
+
+<div class="card">
+<img src="images/page7.jpg" onclick="openImage(this.src)">
+<p>Portfolio หน้า 7</p>
+</div>
+
+<div class="card">
+<img src="images/page8.jpg" onclick="openImage(this.src)">
+<p>Portfolio หน้า 8</p>
+</div>
+
+<div class="card">
+<img src="images/page9.jpg" onclick="openImage(this.src)">
+<p>Portfolio หน้า 9</p>
+</div>
+
+<div class="card">
+<img src="images/page10.jpg" onclick="openImage(this.src)">
+<p>Portfolio หน้า 10</p>
+</div>
+
+
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact">
+
+<h2 class="title">
+
+CONTACT
+
+</h2>
+
+<div class="glass">
+
+
+<p>Facebook :K N A T</p>
+
+<p>Instagram : K N A T</p>
+
+<p>GitHub :kanchaya27</p>
+
+</div>
+
+</section>
+
+<!-- Popup -->
+
+<div id="popup">
+
+<span onclick="closeImage()">&times;</span>
+
+<img id="popup-img">
+
+</div>
+
+<footer>
+
+Portfolio By Kanchaya
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
